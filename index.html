@@ -1,125 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varaladevi Chinese Corner</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varaladevi Chinese Corner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Body Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #594040; /* White background */
-            color: #212121; /* Charcoal text color */
-            line-height: 1.6;
-        }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
 
-        /* Header Styles */
-        header {
-            background-color: #FF6347; /* Tomato Red */
-            color: #FFFFFF; /* White text */
-            text-align: center;
-            padding: 50px 0;
-        }
+    header {
+      background: linear-gradient(to right, #ff4e50, #f9d423);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        header h1 {
-            font-size: 3rem;
-        }
+    header h1 {
+      font-size: 3.2rem;
+      margin-bottom: 10px;
+    }
 
-        /* Menu Styles */
-        .menu {
-            display: flex;
-            justify-content: space-around;
-            padding: 40px 0;
-            background-color: #8BC34A; /* Fresh Green */
-        }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
 
-        .menu-item {
-            background-color: #FFFFFF;
-            color: #212121;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            width: 200px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+      background: #e0f2f1;
+    }
 
-        .menu-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
+    .menu-item {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
 
-        .menu-item p {
-            font-size: 1.1rem;
-        }
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
 
-        /* Contact Section */
-        .contact {
-            background-color: #795548; /* Earth Brown */
-            color: #FFFFFF; /* White text */
-            text-align: center;
-            padding: 40px;
-        }
+    .menu-item h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #ff5722;
+    }
 
-        .contact h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
+    .menu-item p {
+      font-size: 1rem;
+      color: #555;
+    }
 
-        .contact p {
-            font-size: 1.1rem;
-        }
+    .contact {
+      background: #4e342e;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-        /* Footer Styles */
-        footer {
-            background-color: #FF6347; /* Tomato Red */
-            color: #FFFFFF; /* White text */
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    .contact h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .contact a {
+      color: #ffe082;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #ff4e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Varaladevi Chinese Corner</h1>
-        <p>Serving the best Chinese food in BhiWandi</p>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <h1>Varaladevi Chinese Corner</h1>
+    <p>Serving the Best Chinese Food in Bhiwandi</p>
+  </header>
 
-    <!-- Menu Section -->
-    <section class="menu">
-        <div class="menu-item">
-            <h3>Manchurian</h3>
-            <p>Deliciously crispy and savory Manchurian.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Chinese Bhel</h3>
-            <p>A crunchy and tangy Chinese Bhel.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Noodles & Pasta</h3>
-            <p>Perfectly cooked noodles and pasta with rich flavors.</p>
-        </div>
-    </section>
+  <!-- Menu Section -->
+  <section class="menu">
+    <div class="menu-item">
+      <h3>Manchurian</h3>
+      <p>Deliciously crispy and savory Manchurian balls served hot.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Chinese Bhel</h3>
+      <p>A crunchy and tangy fusion snack you'll love.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Noodles & Pasta</h3>
+      <p>Perfectly stir-fried noodles and saucy pasta with exotic flavors.</p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Visit us at: Iliye Bhaji Market, Padmanagar, Bhiwandi</p>
-        <p>Email: <a href="mailto:balkishanushakoyal724@gmail.com" style="color: #080807;">balkishanushakoyal724@gmail.com</a></p>
-    </section>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Visit us at: Bhaji Market near Vinayakam Hospital , Padmanagar, Bhiwandi</p>
+    <p>Email: <a href="mailto:balkishanushakoyal724@gmail.com">balkishanushakoyal724@gmail.com</a></p>
+  </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy 2024 Varaladevi Chinese Corner. All Rights Reserved.</p>
-    </footer>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Varaladevi Chinese Corner. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
