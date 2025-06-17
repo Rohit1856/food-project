@@ -2,149 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Varaladevi Chinese Corner</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8f8f8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, #ff4e50, #f9d423);
-      color: #fff;
-      text-align: center;
-      padding: 60px 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    header h1 {
-      font-size: 3.2rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-
-    .menu {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 60px 20px;
-      background: #e0f2f1;
-    }
-
-    .menu-item {
-      background: #fff;
-      padding: 25px;
-      border-radius: 15px;
-      width: 280px;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-
-    .menu-item h3 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-      color: #ff5722;
-    }
-
-    .menu-item p {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    .contact {
-      background: #4e342e;
-      color: #fff;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .contact h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-
-    .contact p {
-      font-size: 1.1rem;
-      margin: 8px 0;
-    }
-
-    .contact a {
-      color: #ffe082;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #ff4e50;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 768px) {
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Varaladevi Chinese Corner</h1>
-    <p>Serving the Best Chinese Food in Bhiwandi</p>
-  </header>
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-bar-left">📍 Bhiwandi, Maharashtra</div>
+  <div class="top-bar-right">
+    <a href="tel:9766309051">📞 Customer Care</a>
+    <a href="#menu">🍜 Menu</a>
+    <a href="https://wa.me/919766309051" target="_blank">💬 Order Now</a>
+    <a href="#contact">📍 Location</a>
+  </div>
+</div>
 
-  <!-- Menu Section -->
-  <section class="menu">
-    <div class="menu-item">
-      <h3>Manchurian</h3>
-      <p>Deliciously crispy and savory Manchurian balls served hot.</p>
-    </div>
-    <div class="menu-item">
-      <h3>Chinese Bhel</h3>
-      <p>A crunchy and tangy fusion snack you'll love.</p>
-    </div>
-    <div class="menu-item">
-      <h3>Noodles & Pasta</h3>
-      <p>Perfectly stir-fried noodles and saucy pasta with exotic flavors.</p>
-    </div>
-  </section>
+<!-- Header Section -->
+<header>
+  <h1>Varaladevi Chinese Corner</h1>
+  <p>Serving the Best Chinese Food in Bhiwandi</p>
+  <div class="ball"></div>
+</header>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Visit us at: Bhaji Market near Vinayakam Hospital , Padmanagar, Bhiwandi</p>
-    <p>Email: <a href="mailto:balkishanushakoyal724@gmail.com">balkishanushakoyal724@gmail.com</a></p>
-  </section>
+<!-- Menu Section -->
+<section class="menu" id="menu">
+  <div class="menu-card">
+    <div class="menu-card-inner">
+      <div class="menu-card-front">
+        <h3>Manchurian</h3>
+        <p>Hot & Crispy</p>
+      </div>
+      <div class="menu-card-back">
+        <p>Deliciously crispy and savory Manchurian balls made fresh with homemade sauce and veggies.</p>
+      </div>
+    </div>
+  </div>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 Varaladevi Chinese Corner. All Rights Reserved.</p>
-  </footer>
+  <div class="menu-card">
+    <div class="menu-card-inner">
+      <div class="menu-card-front">
+        <h3>Chinese Bhel</h3>
+        <p>Spicy & Crunchy</p>
+      </div>
+      <div class="menu-card-back">
+        <p>A crunchy, tangy Indo-Chinese fusion snack that's perfect for every occasion.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-card-inner">
+      <div class="menu-card-front">
+        <h3>Noodles & Pasta</h3>
+        <p>Cheesy & Tasty</p>
+      </div>
+      <div class="menu-card-back">
+        <p>Perfectly stir-fried noodles or saucy pasta loaded with vegetables and signature sauces.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Order Form Section -->
+<section class="order-section" id="order">
+  <h2>Order Your Food</h2>
+  <form id="orderForm">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required />
+
+    <label for="food">Choose Dish:</label>
+    <select id="food" required>
+      <option value="">--Select--</option>
+      <option value="Manchurian">Manchurian</option>
+      <option value="Chinese Bhel">Chinese Bhel</option>
+      <option value="Noodles">Noodles</option>
+      <option value="Pasta">Pasta</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1" required />
+
+    <label for="address">Delivery Address:</label>
+    <textarea id="address" placeholder="Enter full delivery address" required></textarea>
+
+    <button type="submit">Place Order on WhatsApp</button>
+  </form>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Visit us at: Bhaji Market near Vinayakam Hospital, Padmanagar, Bhiwandi</p>
+  <p>Email: <a href="mailto:balkishanushakoyal724@gmail.com">balkishanushakoyal724@gmail.com</a></p>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <p>&copy; 2024 Varaladevi Chinese Corner. All Rights Reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const food = document.getElementById("food").value;
+    const quantity = document.getElementById("quantity").value;
+    const address = document.getElementById("address").value;
+    const msg = `Hello, I want to order:\n\nName: ${name}\nDish: ${food}\nQuantity: ${quantity}\nAddress: ${address}`;
+    window.open(`https://wa.me/919766309051?text=${encodeURIComponent(msg)}`, "_blank");
+  });
+</script>
 
 </body>
 </html>
